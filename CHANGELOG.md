@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2026-08-30
+
+### Other
+
+- Move guzzlehttp/guzzle to require-dev
+
+The compiled phar bundles every dependency regardless of require vs
+require-dev (release.yml never runs composer with --no-dev) -- require
+stays runtime-only (php), matching the rest of the *-cli ecosystem.
+
 ## [1.0.1] - 2026-08-30
 
 ### Other
