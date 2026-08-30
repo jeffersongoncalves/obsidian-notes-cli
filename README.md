@@ -50,7 +50,7 @@ Every release after the first is built and attached by CI (`.github/workflows/re
 
 | Command | What it does |
 |---|---|
-| `vault:init <path>` | Scaffolds `.claude-notes.json` and a `Claude Notes/` folder in a vault. Safe to re-run — leaves an existing config file untouched. |
+| `vault:init <path>` | Scaffolds `.claude-notes.json` and a `Claude Notes/` folder in a vault, and saves it as the default vault. Safe to re-run — leaves an existing config file untouched. Pass `--no-default` to skip saving the default. |
 | `vault:config [path]` | Saves a default vault path (`~/.obsidian-notes-cli/config.json`) so `--vault` / `OBSIDIAN_VAULT` can be skipped. No `path` shows the current default. |
 | `note:create` | Writes a note. Body comes from stdin. |
 | `note:list` | Lists notes with `source: claude-code` frontmatter in a vault, optionally filtered by `--project`. |
