@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2026-08-30
+
+### Other
+
+- Expand README: full command reference, contract details, Windows build note
+- Add vault:config command to persist a default vault path
+
 ## [1.0.2] - 2026-08-30
 
 ### Other
