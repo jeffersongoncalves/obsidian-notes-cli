@@ -51,6 +51,7 @@ Every release after the first is built and attached by CI (`.github/workflows/re
 | Command | What it does |
 |---|---|
 | `vault:init <path>` | Scaffolds `.claude-notes.json` and a `Claude Notes/` folder in a vault. Safe to re-run — leaves an existing config file untouched. |
+| `vault:config [path]` | Saves a default vault path (`~/.obsidian-notes-cli/config.json`) so `--vault` / `OBSIDIAN_VAULT` can be skipped. No `path` shows the current default. |
 | `note:create` | Writes a note. Body comes from stdin. |
 | `note:list` | Lists notes with `source: claude-code` frontmatter in a vault, optionally filtered by `--project`. |
 | `self-update` | Replaces the running binary with the latest release's `.phar` (PHAR installs only — no-op for Composer installs, which update via `composer global update`). |
@@ -62,7 +63,7 @@ Every release after the first is built and attached by CI (`.github/workflows/re
 | `--project=` | yes | Groups the note in the folder structure and in the Obsidian plugin's sidebar. |
 | `--title=` | yes | Used to build the filename slug and stored in frontmatter. |
 | `--tags=` | no | Repeatable: `--tags=architecture --tags=backend`. |
-| `--vault=` | no* | Vault path. *Falls back to `OBSIDIAN_VAULT` or the `notes.vault` config — one of the two must resolve. |
+| `--vault=` | no* | Vault path. *Falls back to `OBSIDIAN_VAULT`, then the `vault:config` default — one of the three must resolve. |
 
 ## Usage
 
@@ -87,6 +88,15 @@ Set `OBSIDIAN_VAULT` to skip passing `--vault` every time:
 ```bash
 export OBSIDIAN_VAULT=/path/to/vault
 ```
+
+Or persist it once with `vault:config` (handy so Claude Code/scripts never need to know the path):
+
+```bash
+obsidian-notes vault:config /path/to/vault   # save
+obsidian-notes vault:config                  # show current default
+```
+
+Resolution order: `--vault` > `OBSIDIAN_VAULT` > `vault:config` default.
 
 ## The `.claude-notes.json` contract
 

@@ -1,5 +1,7 @@
 <?php
 
+use App\Services\GlobalConfig;
+
 return [
 
     /*
@@ -7,11 +9,12 @@ return [
     | Default vault
     |--------------------------------------------------------------------------
     |
-    | Used when --vault isn't passed. Falls back to the OBSIDIAN_VAULT env var.
+    | Used when --vault isn't passed. Falls back to the OBSIDIAN_VAULT env var,
+    | then to the path saved via `vault:config` (~/.obsidian-notes-cli/config.json).
     |
     */
 
-    'vault' => env('OBSIDIAN_VAULT'),
+    'vault' => env('OBSIDIAN_VAULT') ?: GlobalConfig::vault(),
 
     /*
     |--------------------------------------------------------------------------
