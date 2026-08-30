@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2026-08-30
+
+### Other
+
+- Init now saves the vault as the default
+
 ## [1.0.3] - 2026-08-30
 
 ### Other
