@@ -1,4 +1,17 @@
+<div class="filament-hidden">
+
+![Obsidian Notes CLI](https://raw.githubusercontent.com/jeffersongoncalves/obsidian-notes-cli/main/art/jeffersongoncalves-obsidian-notes-cli.png)
+
+</div>
+
 # Obsidian Notes CLI
+
+<p align="center">
+  <a href="https://github.com/jeffersongoncalves/obsidian-notes-cli/actions/workflows/run-tests.yml"><img src="https://github.com/jeffersongoncalves/obsidian-notes-cli/actions/workflows/run-tests.yml/badge.svg" alt="Tests" /></a>
+  <a href="https://github.com/jeffersongoncalves/obsidian-notes-cli/releases/latest"><img src="https://img.shields.io/github/v/release/jeffersongoncalves/obsidian-notes-cli" alt="Latest Release" /></a>
+  <img src="https://img.shields.io/badge/php-%3E%3D8.3-8892BF" alt="PHP 8.3+" />
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/jeffersongoncalves/obsidian-notes-cli" alt="License" /></a>
+</p>
 
 CLI that writes structured Markdown notes into an [Obsidian](https://obsidian.md) vault — built so Claude Code (or any script) can persist documentation/decisions as notes you can browse and search natively in Obsidian.
 
