@@ -1,4 +1,5 @@
 name: Release
+# trigger reindex
 
 # Single linear release flow. The KEY invariant: the PHAR binary (composer `bin`,
 # builds/obsidian-notes) is built and committed to main BEFORE the tag is created, and
