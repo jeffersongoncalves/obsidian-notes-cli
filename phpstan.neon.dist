@@ -1,0 +1,12 @@
+parameters:
+    level: 5
+    paths:
+        - app
+        - tests
+    ignoreErrors:
+        -
+            identifier: property.notFound
+            path: tests/*
+        -
+            identifier: method.notFound
+            path: tests/*
