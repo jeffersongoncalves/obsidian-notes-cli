@@ -27,4 +27,13 @@ class FrontmatterParser
 
         return $frontmatter;
     }
+
+    /**
+     * Returns the note content with the frontmatter block (as written by
+     * NoteWriterService) removed, leaving just the body.
+     */
+    public static function stripBody(string $content): string
+    {
+        return rtrim(preg_replace('/^---\n.*?\n---\n\n?/s', '', $content, 1));
+    }
 }
