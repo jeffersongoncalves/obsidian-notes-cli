@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.6] - 2026-09-10
+
+### Features
+
+- Add note:read command to strip frontmatter (#6)
+
 ## [1.0.5] - 2026-09-08
 
 ### Bug Fixes
