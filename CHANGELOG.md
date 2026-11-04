@@ -2,6 +2,91 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-11-04
+
+### Bug Fixes
+
+- Pin PHP floor to 8.3 for Laravel Zero 13
+
+### CI/CD
+
+- Pass release version input through env
+- Standardize dependabot config
+- Standardize tests workflow
+- Remove run-tests.yml (replaced by tests.yml)
+- Standardize tests workflow
+- Auto-merge dependabot github-actions minor/patch
+
+### Dependencies
+
+- **deps:** Bump orhun/git-cliff-action in the actions-deps group
+- **deps:** Bump shivammathur/setup-php (#17)
+- **deps:** Bump stefanzweifel/git-auto-commit-action (#20)
+
+### Documentation
+
+- Point tests badge to tests.yml
+
+### Miscellaneous Tasks
+
+- **deps-dev:** Bump phpstan/phpstan
+- **deps-dev:** Bump phpstan/phpstan
+- **deps-dev:** Bump phpstan/phpstan
+
+### Other
+
+- Bump the all-composer group with 4 updates
+
+Bumps the all-composer group with 4 updates: [jeffersongoncalves/laravel-zero-self-update](https://github.com/jeffersongoncalves/laravel-zero-self-update), [laravel-zero/framework](https://github.com/laravel-zero/framework), [laravel/pint](https://github.com/laravel/pint) and [phpstan/phpstan](https://github.com/phpstan/phpstan-phar-composer-source).
+
+
+Updates `jeffersongoncalves/laravel-zero-self-update` from 1.0.1 to 1.1.0
+- [Release notes](https://github.com/jeffersongoncalves/laravel-zero-self-update/releases)
+- [Changelog](https://github.com/jeffersongoncalves/laravel-zero-self-update/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/jeffersongoncalves/laravel-zero-self-update/compare/v1.0.1...v1.1.0)
+
+Updates `laravel-zero/framework` from 12.1.0 to 13.0.0
+- [Release notes](https://github.com/laravel-zero/framework/releases)
+- [Changelog](https://github.com/laravel-zero/framework/blob/13.x/CHANGELOG.md)
+- [Commits](https://github.com/laravel-zero/framework/compare/v12.1.0...v13.0.0)
+
+Updates `laravel/pint` from 1.30.5 to 1.32.1
+- [Release notes](https://github.com/laravel/pint/releases)
+- [Changelog](https://github.com/laravel/pint/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/laravel/pint/compare/v1.30.5...v1.32.1)
+
+Updates `phpstan/phpstan` from 2.2.10 to 2.2.13
+- [Commits](https://github.com/phpstan/phpstan-phar-composer-source/commits)
+
+---
+updated-dependencies:
+- dependency-name: jeffersongoncalves/laravel-zero-self-update
+  dependency-version: 1.1.0
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+  dependency-group: all-composer
+- dependency-name: laravel-zero/framework
+  dependency-version: 13.0.0
+  dependency-type: direct:development
+  update-type: version-update:semver-major
+  dependency-group: all-composer
+- dependency-name: laravel/pint
+  dependency-version: 1.32.1
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+  dependency-group: all-composer
+- dependency-name: phpstan/phpstan
+  dependency-version: 2.2.13
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+  dependency-group: all-composer
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+- Auto-assign issues and pull requests
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
 ## [1.0.6] - 2026-09-10
 
 ### Features
